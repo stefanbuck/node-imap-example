@@ -1,0 +1,15 @@
+{
+  "name": "imap-sample",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "imap": "^0.8.9"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Stefan Buck <web@broud.de> (http://stefanbuck.com/)",
+  "license": "ISC"
+}
