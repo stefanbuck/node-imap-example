@@ -1,15 +1,30 @@
 {
-  "name": "imap-sample",
+  "name": "node-imap-example",
+  "description": "A Simple node-imap and mailparser example",
   "version": "0.0.1",
-  "description": "",
+  "homepage": "https://github.com/stefanbuck/node-imap-example",
+  "bugs": "https://github.com/stefanbuck/node-imap-example/issues",
+  "license": "MIT",
   "main": "index.js",
+  "author": {
+    "name": "Stefan Buck"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/stefanbuck/node-imap-example"
+  },
+  "keywords": [],
   "dependencies": {
-    "imap": "^0.8.9"
+    "imap": "^0.8.9",
+    "mailparser": "^0.4.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "gulp": "~3.5.2",
+    "gulp-jscs": "~0.3.0",
+    "gulp-jshint": "~1.4.0",
+    "jshint-stylish": "~0.1.5"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Stefan Buck <web@broud.de> (http://stefanbuck.com/)",
-  "license": "ISC"
+    "test": "gulp test"
+  }
 }
