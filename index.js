@@ -43,12 +43,7 @@ imap.once('ready', function () {
         });
 
         msg.on('body', function (stream) {
-          stream.on('data', function (chunk) {
-            parser.write(chunk.toString());
-          });
-          stream.once('end', function () {
-            parser.end();
-          });
+          stream.pipe(parser);
         });
 
       });
